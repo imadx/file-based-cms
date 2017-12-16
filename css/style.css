@@ -25,4 +25,37 @@ h1, h2, h3, h4 {
 .full-width {
   width: 100%; }
 
+.layoutWrapper {
+  display: flex; }
+  .layoutWrapper .sidebar {
+    position: sticky;
+    display: block;
+    top: 0;
+    left: 0;
+    height: 100%;
+    box-sizing: border-box;
+    flex-grow: 0;
+    min-width: 200px; }
+    .layoutWrapper .sidebar ul {
+      list-style: none;
+      padding-left: 0; }
+      .layoutWrapper .sidebar ul li a {
+        display: block;
+        padding: 1em;
+        transition: all .3s; }
+        .layoutWrapper .sidebar ul li a:link, .layoutWrapper .sidebar ul li a:active, .layoutWrapper .sidebar ul li a:visited {
+          text-decoration: none;
+          color: #0f0d0a; }
+        .layoutWrapper .sidebar ul li a:hover {
+          background: #e0dbd4; }
+  .layoutWrapper .mainContent {
+    flex-grow: 1; }
+    .layoutWrapper .mainContent .content {
+      text-align: justify; }
+      .layoutWrapper .mainContent .content h1 {
+        margin-bottom: 0; }
+      .layoutWrapper .mainContent .content h3 {
+        color: #e68600;
+        margin-top: 0; }
+
 /*# sourceMappingURL=style.css.map */

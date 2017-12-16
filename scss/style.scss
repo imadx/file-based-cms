@@ -29,3 +29,57 @@ h1, h2, h3, h4{
 .full-width{
     width: 100%;
 }
+.layoutWrapper{
+    display: flex;
+
+    .sidebar{
+        position: sticky;
+        display: block;
+        top: 0;
+        left: 0;
+        height: 100%;
+        box-sizing: border-box;
+        flex-grow: 0;
+        min-width: 200px;
+
+        ul{
+            list-style: none;
+            padding-left: 0;
+
+            li{
+                a{   
+                    display: block;
+                    padding: 1em;
+                    transition: all .3s;
+
+                    &:link,
+                    &:active,
+                    &:visited{
+                        text-decoration: none;
+                        color: $dark-color;
+                    }
+
+                    &:hover{
+                        background: $light-color;
+                    }
+                }
+            }
+        }
+    }
+
+    .mainContent{
+        flex-grow: 1;
+
+        .content{
+            text-align: justify;
+            
+            h1{
+                margin-bottom: 0;
+            }
+            h3{
+                color: $accent-color;
+                margin-top: 0;
+            }
+        }
+    }
+}
