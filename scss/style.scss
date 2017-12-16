@@ -1,0 +1,31 @@
+@import 'colors';
+
+html, body{
+    font-family: sans-serif;
+    margin: 0;
+}
+.hgroup{
+    margin-top: 1em;
+    margin-bottom: 1em;
+    
+    h1, h2, h3, h4{
+        margin: 0;
+        padding: 0;
+    }
+}
+h1, h2, h3, h4{
+    font-weight: lighter;
+}
+.accent{
+    color: $accent-color;
+}
+.accent-bg{
+    background-color: $accent-color
+}
+.content{
+    padding: 5em 3em;
+    border-bottom: solid thin #ccc;
+}
+.full-width{
+    width: 100%;
+}
